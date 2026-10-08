@@ -1,11 +1,11 @@
 <div align="center">
 
-  <img src="/WaqtDesk/@Resources/Images/app_icon.png" alt="WaqtDesk Logo" width="115" />
+  <img src="WaqtDesk/@Resources/Images/app_icon.png" alt="WaqtDesk Logo" width="115" />
 
   # 🌙 WaqtDesk
 
   ### Next-Gen Glassmorphic Desktop Prayer Times Widget for Windows
-  *Engineered for precision, fluid aesthetics, and zero distraction.*
+  *Engineered for precision, fluid aesthetics, and distraction-free daily workflow.*
 
   <p align="center">
     <a href="https://github.com/ShahriarAhmedRiaz/WaqtDesk/releases">
@@ -20,11 +20,12 @@
   </p>
 
   <p align="center">
+    <a href="#-overview">Overview</a> •
     <a href="#-features">Features</a> •
     <a href="#-visual-tour">Visual Tour</a> •
-    <a href="#-quick-install">Installation</a> •
-    <a href="#-settings--controls">Settings</a> •
-    <a href="#-license--usage-terms">License Terms</a> •
+    <a href="#-installation">Installation</a> •
+    <a href="#-settings--customization">Settings</a> •
+    <a href="#-license--terms">License</a> •
     <a href="#-credits">Credits</a>
   </p>
 
@@ -36,21 +37,21 @@
 
 ## ⚡ Overview
 
-**WaqtDesk** holo ekta modern, glassmorphic desktop prayer times dashboard ja Rainmeter ebong high-performance event-driven Lua engine diye toiri. Eita distraction-free bhabe protiti waqt-er shomoy track kore, dynamic celestial visual dekhay ebong seamless 2x2 metrics provide kore.
+**WaqtDesk** is a modern, glassmorphic desktop prayer HUD built on Rainmeter and driven by a high-performance event-driven Lua engine. It provides an unobtrusive, distraction-free companion on your desktop—tracking prayer schedules down to the second, updating dynamic celestial bodies in real time, and presenting essential daily solar metrics at a glance.
 
 ---
 
 ## ✨ Features
 
-- 🌌 **Unified Glassmorphism:** Deep dark emerald frosted acrylic aesthetic, ja modern Windows 11 desktop-er shathe perfectly blend hoy.
-- ⏱️ **Second-by-Second Countdown:** Live countdown clock ebong active waqt-er neon accent indicator.
-- ☀️ **Dynamic Celestial Viewport:** Surjo ebong chaad-er real-time astronomical movement ja waqt onujayi shundor bhabe coordinate change kore.
-- 🎛️ **2×2 Solar Summary Chips:** Ek glance-e dekhar jonno Surjodoy, Surjasto, Sahri-r sesh shomoy ebong Iftar-er badge tiles.
-- ⚙️ **In-App Settings Suite:** Panel-er top-right setting button (⚙) theke direct control:
-  - **Madhab Switcher:** Hanafi (Asr: 2 gun chaya) ebong Shafi'i / Ahle Hadis (1 gun chaya) instant switch.
-  - **Language Selector:** বাংলা (Bangla) ebong English-er moddhe dynamic 1-click translation.
-  - **Smart Geolocation:** Auto IP detection ebong manual coordinate support.
-- 🛡️ **Zero Resource Overhead:** Near-zero CPU lag ebong optimized background memory management.
+- 🌌 **Unified Glassmorphic UI:** Deep emerald frosted-glass design tailored to blend naturally with modern Windows 11 dark workspaces.
+- ⏱️ **Second-by-Second Countdown:** Live countdown display with neon accent highlights on the currently active prayer window.
+- ☀️ **Dynamic Celestial Viewport:** Real-time orbital movement of the Sun and Moon, shifting coordinates smoothly throughout the day.
+- 🎛️ **2×2 Solar Glance Chips:** Compact, glanceable metric badges for Sunrise, Sunset, Sahri end time, and Iftar.
+- ⚙️ **On-Widget Settings Suite:** Access the configuration dashboard right from the top-right gear icon (⚙):
+  - **Madhab Switcher:** Instant toggle between **Hanafi** (2× shadow rule) and **Shafi'i / General** (1× shadow rule).
+  - **Bilingual Interface:** Real-time one-click translation between **English** and **বাংলা (Bengali)**.
+  - **Smart Geolocation:** Automatic IP-based location detection with support for custom manual coordinates.
+- 🛡️ **Zero Resource Overhead:** Near-zero CPU impact and optimized memory handling via event-driven Lua execution.
 
 ---
 
@@ -61,11 +62,11 @@
     <tr>
       <td align="center" width="50%">
         <b>Compact Desktop HUD</b><br/>
-        <i>Minimal floating workspace companion</i>
+        <i>Minimal floating workspace glance</i>
       </td>
       <td align="center" width="50%">
         <b>Expanded Detail Panel</b><br/>
-        <i>Clean 5-waqt timetable with active neon indicators</i>
+        <i>Clean 5-prayer timetable with active glow tiles</i>
       </td>
     </tr>
   </table>
@@ -73,13 +74,50 @@
 
 ---
 
-## 📥 Quick Install
+## 📥 Installation
 
 ### Prerequisites
-1. **[Rainmeter 4.5+](https://www.rainmeter.net/)** install thaka lagbe.
-2. Bangla font (*Kalpurush*, *Hind Siliguri*, ba *SolaimanLipi*) Windows-e install kora thaka lagbe.
+1. Download and install **[Rainmeter 4.5 or newer](https://www.rainmeter.net/)**.
+2. If using the Bengali language mode, ensure a suitable Bengali font (such as *Kalpurush*, *Hind Siliguri*, or *SolaimanLipi*) is installed on Windows.
 
-### Installation Steps
+### Setup Instructions
 ```bash
-# Clone the repository into your Rainmeter Skins folder
+# Clone the repository directly into your Rainmeter skins directory
 git clone [https://github.com/ShahriarAhmedRiaz/WaqtDesk.git](https://github.com/ShahriarAhmedRiaz/WaqtDesk.git) "%USERPROFILE%\Documents\Rainmeter\Skins\WaqtDesk"
+
+```
+
+1. Open your system tray, right-click the **Rainmeter** icon, and select **Refresh all**.
+2. In the Rainmeter Manager window, expand the `WaqtDesk` folder and select `WaqtDesk.ini`.
+3. Click the **Load** button in the top-right corner.
+
+---
+
+## ⚙️ Settings & Customization
+
+Click the **⚙** gear icon located in the expanded panel's top-right corner to open the preference suite:
+
+| Parameter | Options | Description |
+| --- | --- | --- |
+| **School (Madhab)** | `Hanafi` / `Shafi'i` | Toggles the Asr prayer calculation method between Hanafi and Standard. |
+| **Language** | `English` / `বাংলা` | Translates all interface labels, timetable names, and dates instantly. |
+| **Location** | `Auto IP` / `Manual` | Uses automatic IP lookup or allows custom Latitude and Longitude input. |
+
+---
+
+## 🔒 License & Terms
+
+This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**.
+
+* ✅ **Free for Personal Use:** You are free to download, use, and modify the skin for personal purposes.
+* ❌ **Commercial Use Prohibited:** You may not sell, monetize, redistribute for commercial gain, or bundle this software into paid products.
+* 🏷️ **Attribution Required:** Any public fork or redistribution must retain clear attribution to **Shahriar Ahmed Riaz** and **Codiology Labs**.
+
+---
+
+## 👨‍💻 Credits & Maintainers
+
+# Shahriar Ahmed Riaz
+# Codiology Labs
+
+---
