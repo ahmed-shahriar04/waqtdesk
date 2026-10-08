@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="@Resources/Images/app_icon.png" alt="WaqtDesk Logo" width="115" />
+  <img src="/WaqtDesk/@Resources/Images/app_icon.png" alt="WaqtDesk Logo" width="115" />
 
   # 🌙 WaqtDesk
 
